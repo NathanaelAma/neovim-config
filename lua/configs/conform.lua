@@ -1,8 +1,12 @@
 local options = {
+  lsp_fallback = true,
   formatters_by_ft = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
+    ruby = { "rubocop" },
+    javascript = { "prettier" },
+    typescript = { "prettier" },
   },
 
   format_on_save = {
