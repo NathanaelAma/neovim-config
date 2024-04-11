@@ -99,6 +99,7 @@ return {
           "mason",
           "notify",
           "toggleterm",
+          "nvimtree",
           "lazyterm",
         },
         callback = function()
