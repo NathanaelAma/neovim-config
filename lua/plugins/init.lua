@@ -20,7 +20,11 @@ return {
 
   { "b0o/schemastore.nvim", lazy = false },
 
-  { "max397574/better-escape.nvim", event = "InsertCharPre", opts = {
-    timeout = 300,
-  } },
+  {
+    "max397574/better-escape.nvim",
+    event = "InsertCharPre",
+    opts = {
+      timeout = 300,
+    },
+  },
 }
