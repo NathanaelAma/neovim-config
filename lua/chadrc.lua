@@ -15,6 +15,9 @@ M.ui = {
   statusline = {
     theme = "minimal",
   },
+  tabufline = {
+    enabled = true,
+  },
 }
 
 return M
