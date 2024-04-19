@@ -8,6 +8,7 @@ return {
         "vimdoc",
         -- General
         "gitignore",
+        "dockerfile",
         -- Web Development
         "html",
         "javascript",

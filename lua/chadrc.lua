@@ -11,12 +11,11 @@ M.ui = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
   },
-  transparency = true,
   statusline = {
     theme = "minimal",
   },
   tabufline = {
-    enabled = true,
+    enabled = false,
   },
 }
 
