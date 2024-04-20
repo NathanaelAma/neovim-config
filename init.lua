@@ -14,9 +14,11 @@ local lazy_config = require "configs.lazy"
 
 -- load plugins
 require("lazy").setup({
-
+  { import = "themes" },
   { import = "plugins" },
 }, lazy_config)
+
+require "theme"
 
 require "options"
 
