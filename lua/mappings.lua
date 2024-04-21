@@ -39,13 +39,13 @@ map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Lsp diagnostic loclis
 -- tabufline
 -- map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New" })
 
--- map("n", "<tab>", function()
---   require("nvchad.tabufline").next()
--- end, { desc = "Buffer Goto next" })
-
--- map("n", "<S-tab>", function()
---   require("nvchad.tabufline").prev()
--- end, { desc = "Buffer Goto prev" })
+map("n", "<tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Buffer Goto next" })
+map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Buffer Goto prev" })
+map("n", "<leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", { desc = "Buffer Goto 1" })
+map("n", "<leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", { desc = "Buffer Goto 2" })
+map("n", "<leader>3", "<cmd>BufferLineGoToBuffer 3<CR>", { desc = "Buffer Goto 3" })
+map("n", "<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", { desc = "Buffer Goto 4" })
+map("n", "<leader>x", "<cmd>BufDel<CR>", { desc = "Buffer Close" })
 
 -- map("n", "<leader>x", function()
 --   require("nvchad.tabufline").close_buffer()
