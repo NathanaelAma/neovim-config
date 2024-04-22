@@ -67,3 +67,10 @@ lspconfig.jsonls.setup {
     },
   },
 }
+
+-- ruby 
+lspconfig.solargraph.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  on_init = on_init,
+}

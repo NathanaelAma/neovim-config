@@ -1,6 +1,7 @@
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
+
 -- Git
 map("n", "<leader>lg", "<cmd>LazyGitCurrentFile<cr>", { desc = "Open LazyGit" })
 
@@ -24,7 +25,6 @@ map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "File Copy whole" })
 
 map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "Toggle Line number" })
 map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle Relative number" })
-map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle NvCheatsheet" })
 
 map("n", "<leader>fm", function()
   require("conform").format { lsp_fallback = true }
