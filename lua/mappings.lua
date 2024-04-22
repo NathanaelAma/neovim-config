@@ -80,22 +80,18 @@ map("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", { desc = "Telescope Find o
 map("n", "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", { desc = "Telescope Find in current buffer" })
 map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope Git commits" })
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Telescope Git status" })
-map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "Telescope Pick hidden term" })
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope Find files" })
 map("n", "<leader>fa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
-  { desc = "Telescope Find all files" })
+{ desc = "Telescope Find all files" })
 
 -- terminal
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "Terminal Escape terminal mode" })
 
--- new terminals
--- map("n", "<leader>h", function()
---   require("nvchad.term").new { pos = "sp", size = 0.3 }
--- end, { desc = "Terminal New horizontal term" })
-
--- map("n", "<leader>v", function()
---   require("nvchad.term").new { pos = "vsp", size = 0.3 }
--- end, { desc = "Terminal New vertical window" })
+-- terminals
+map("n", "<leader>pt", "<cmd>TermSelect<CR>", { desc = "Pick hidden term" })
+map("n", "<leader>h", "<cmd>ToggleTerm direction=horizontal name=htoggleTerm<cr>", { desc = "Terminal New horizontal term" })
+map("n", "<leader>v", "<cmd>ToggleTerm direction=vertical name=vtoggleTerm<cr>", { desc = "Terminal New vertical term" })
+map("n", "<leader>i", "<cmd>ToggleTerm direction=float name=floatTerm<cr>", { desc = "Terminal New floating term" })
 
 -- -- toggleable
 -- map({ "n", "t" }, "<A-v>", function()
