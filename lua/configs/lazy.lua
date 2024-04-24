@@ -9,6 +9,8 @@ return {
       loaded = "",
       not_loaded = "",
     },
+    size = { width = 0.9, height = 0.9 },
+    border = { "┏", "━", "┓", "┃", "┛","━", "┗", "┃" },
   },
 
   performance = {
