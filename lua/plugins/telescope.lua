@@ -52,8 +52,7 @@ return {
         n = { ["q"] = require("telescope.actions").close },
       },
     },
-  
-    extensions_list = { "themes", "terms", "flutter" },
+    extensions_list = { "terms", "flutter" },
     extensions = {
       fzf = {
         fuzzy = true,
@@ -63,4 +62,7 @@ return {
       },
     },
   },
+  config  = function ()
+    vim.lsp.handlers["textDocument/references"] = require("telescope.builtin").lsp_references
+  end
 }
