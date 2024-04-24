@@ -43,11 +43,14 @@ return {
         max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
         truncate_names = true,  -- whether or not tab names should be truncated
         tab_size = 18,
-        diagnostics = false --[[ | "nvim_lsp" | "coc" ]],
+        diagnostics = "nvim_lsp" --[[ | "nvim_lsp" | "coc" ]],
         diagnostics_update_in_insert = false,
         -- The diagnostics indicator can be set to nil to keep the buffer name highlight but delete the highlighting
-        diagnostics_indicator = function(count, level, diagnostics_dict, context)
-          return "(" .. count .. ")"
+        diagnostics_indicator = function(_, _, diag)
+          local icons = require("themes.icons.diagnostics")
+          local ret = (diag.error and icons.Error.icon .. diag.error .. " " or "")
+              .. (diag.warning and icons.Warn.icon .. diag.warning or "")
+          return vim.trim(ret)
         end,
         -- NOTE: this will be called a lot so don't do any heavy processing here
         custom_filter = function(buf_number, buf_numbers)
@@ -118,7 +121,7 @@ return {
       vim.api.nvim_create_autocmd("BufAdd", {
         callback = function()
           vim.schedule(function()
-            ---@diagnostic disable-next-line: undefined-global 
+            ---@diagnostic disable-next-line: undefined-global
             pcall(nvim_bufferline)
           end)
         end,
