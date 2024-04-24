@@ -1,6 +1,7 @@
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
+
 -- Git
 map("n", "<leader>lg", "<cmd>LazyGitCurrentFile<cr>", { desc = "Open LazyGit" })
 
@@ -24,7 +25,6 @@ map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "File Copy whole" })
 
 map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "Toggle Line number" })
 map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle Relative number" })
-map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle NvCheatsheet" })
 
 map("n", "<leader>fm", function()
   require("conform").format { lsp_fallback = true }
@@ -45,6 +45,12 @@ map("n", "<leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", { desc = "Buffer Goto 1
 map("n", "<leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", { desc = "Buffer Goto 2" })
 map("n", "<leader>3", "<cmd>BufferLineGoToBuffer 3<CR>", { desc = "Buffer Goto 3" })
 map("n", "<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", { desc = "Buffer Goto 4" })
+map("n", "<leader>5", "<cmd>BufferLineGoToBuffer 5<CR>", { desc = "Buffer Goto 5" })
+map("n", "<leader>6", "<cmd>BufferLineGoToBuffer 6<CR>", { desc = "Buffer Goto 6" })
+map("n", "<leader>7", "<cmd>BufferLineGoToBuffer 7<CR>", { desc = "Buffer Goto 7" })
+map("n", "<leader>8", "<cmd>BufferLineGoToBuffer 8<CR>", { desc = "Buffer Goto 8" })
+map("n", "<leader>9", "<cmd>BufferLineGoToBuffer 9<CR>", { desc = "Buffer Goto 9" })
+map("n", "<leader>0", "<cmd>BufferLineGoToBuffer 10<CR>", { desc = "Buffer Goto 10" })
 map("n", "<leader>x", "<cmd>BufDel<CR>", { desc = "Buffer Close" })
 
 -- map("n", "<leader>x", function()
@@ -80,22 +86,18 @@ map("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", { desc = "Telescope Find o
 map("n", "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", { desc = "Telescope Find in current buffer" })
 map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope Git commits" })
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Telescope Git status" })
-map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "Telescope Pick hidden term" })
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope Find files" })
 map("n", "<leader>fa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
-  { desc = "Telescope Find all files" })
+{ desc = "Telescope Find all files" })
 
 -- terminal
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "Terminal Escape terminal mode" })
 
--- new terminals
--- map("n", "<leader>h", function()
---   require("nvchad.term").new { pos = "sp", size = 0.3 }
--- end, { desc = "Terminal New horizontal term" })
-
--- map("n", "<leader>v", function()
---   require("nvchad.term").new { pos = "vsp", size = 0.3 }
--- end, { desc = "Terminal New vertical window" })
+-- terminals
+map("n", "<leader>pt", "<cmd>TermSelect<CR>", { desc = "Pick hidden term" })
+map("n", "<leader>h", "<cmd>ToggleTerm direction=horizontal name=htoggleTerm<cr>", { desc = "Terminal New horizontal term" })
+map("n", "<leader>v", "<cmd>ToggleTerm direction=vertical name=vtoggleTerm<cr>", { desc = "Terminal New vertical term" })
+map("n", "<leader>i", "<cmd>ToggleTerm direction=float name=floatTerm<cr>", { desc = "Terminal New floating term" })
 
 -- -- toggleable
 -- map({ "n", "t" }, "<A-v>", function()
