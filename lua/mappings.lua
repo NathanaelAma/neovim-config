@@ -45,6 +45,12 @@ map("n", "<leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", { desc = "Buffer Goto 1
 map("n", "<leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", { desc = "Buffer Goto 2" })
 map("n", "<leader>3", "<cmd>BufferLineGoToBuffer 3<CR>", { desc = "Buffer Goto 3" })
 map("n", "<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", { desc = "Buffer Goto 4" })
+map("n", "<leader>5", "<cmd>BufferLineGoToBuffer 5<CR>", { desc = "Buffer Goto 5" })
+map("n", "<leader>6", "<cmd>BufferLineGoToBuffer 6<CR>", { desc = "Buffer Goto 6" })
+map("n", "<leader>7", "<cmd>BufferLineGoToBuffer 7<CR>", { desc = "Buffer Goto 7" })
+map("n", "<leader>8", "<cmd>BufferLineGoToBuffer 8<CR>", { desc = "Buffer Goto 8" })
+map("n", "<leader>9", "<cmd>BufferLineGoToBuffer 9<CR>", { desc = "Buffer Goto 9" })
+map("n", "<leader>0", "<cmd>BufferLineGoToBuffer 10<CR>", { desc = "Buffer Goto 10" })
 map("n", "<leader>x", "<cmd>BufDel<CR>", { desc = "Buffer Close" })
 
 -- map("n", "<leader>x", function()

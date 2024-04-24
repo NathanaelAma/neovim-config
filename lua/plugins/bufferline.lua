@@ -2,7 +2,7 @@ return {
     {
         'akinsho/bufferline.nvim',
         lazy = true,
-        event = "BufRead",
+        event = "VimEnter",
         version = "*",
         dependencies = 'nvim-tree/nvim-web-devicons',
         after = "catppuccin",
