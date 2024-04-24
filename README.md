@@ -29,6 +29,8 @@ The configuration is organized into separate files and folders for easy navigati
 
 - `init.lua`: The main configuration file that loads all plugins and settings.
 - `lua/plugins/`: Contains the configuration for each plugin, seperated by category.
+- `lua/configs/`: Contains the configuration for various plugins.
+- `lua/themes/`: Contains the themes that can be used with the configuration.
 - `lua/autocmds.lua`: Contains autocommands that are triggered when certain events occur.
 - `lua/mappings.lua`: Contains key mappings for various actions.
 - `lua/options.lua`: Contains global settings for Neovim.
