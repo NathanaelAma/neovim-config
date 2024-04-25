@@ -1,5 +1,12 @@
 # Neovim Configuration Repository
 
+<div align="center">
+
+[![wakatime](https://wakatime.com/badge/user/018cc971-633c-4eeb-9cce-333cea6ef929/project/018d9c31-be33-49de-9285-8a95643ac0ff.svg?style=for-the-badge)](https://wakatime.com/badge/user/018cc971-633c-4eeb-9cce-333cea6ef929/project/018d9c31-be33-49de-9285-8a95643ac0ff)
+[![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.9.5-blueviolet.svg?style=for-the-badge&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
+[![License](https://img.shields.io/github/license/NathanaelAma/neovim-config?style=for-the-badge&color=blue)](LICENSE)
+</div>
+
 This repository contains a highly customizable and feature-rich configuration for Neovim. It is designed to provide an enhanced development experience with a focus on productivity and usability.
 
 ## Features
