@@ -32,7 +32,7 @@ After cloning the repository, open Neovim and the plugins will be installed auto
 
 ## Usage
 
-The configuration is organized into separate files and folders for easy navigation and customization. Here are some key files:
+The configuration is organized into separate files and folders for easy navigation and customization. Here are some key ones:
 
 - `init.lua`: The main configuration file that loads all plugins and settings.
 - `lua/plugins/`: Contains the configuration for each plugin, seperated by category.
