@@ -48,8 +48,8 @@ return {
         -- The diagnostics indicator can be set to nil to keep the buffer name highlight but delete the highlighting
         diagnostics_indicator = function(_, _, diag)
           local icons = require("themes.icons.diagnostics")
-          local ret = (diag.error and icons.Error.icon .. diag.error .. " " or "")
-              .. (diag.warning and icons.Warn.icon .. diag.warning or "")
+          local ret = (diag.error and icons.Error.icon .. " " .. diag.error .. " " or "")
+              .. (diag.warning and icons.Warn.icon .. " " .. diag.warning or "")
           return vim.trim(ret)
         end,
         -- NOTE: this will be called a lot so don't do any heavy processing here
