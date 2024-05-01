@@ -3,7 +3,7 @@ return {
         'akinsho/toggleterm.nvim',
         version = "*",
         cmd = "ToggleTerm",
-        setup = function()
+        config = function()
             require('toggleterm').setup {
                 size = function(term)
                     if term.direction == "horizontal" then
@@ -15,7 +15,6 @@ return {
                 hide_numbers = true,
                 shade_filetypes = {},
                 shade_terminals = true,
-                shading_factor = '<number>',
                 start_in_insert = true,
                 insert_mappings = true,
                 persist_size = true,

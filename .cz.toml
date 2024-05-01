@@ -4,3 +4,6 @@ tag_format = "$version"
 version_scheme = "semver"
 version = "0.1.0"
 update_changelog_on_bump = true
+
+[tool.commitizen.cz_conventional_commits]
+bump_message = "chore(release): $version"

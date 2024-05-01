@@ -38,4 +38,7 @@ return {
         "hrsh7th/cmp-path",
       },
     },
+    opts = function()
+      return require "plugins.configs.cmp"
+    end,
   }

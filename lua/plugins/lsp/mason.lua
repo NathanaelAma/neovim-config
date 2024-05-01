@@ -3,7 +3,6 @@ return {
   cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUpdate" },
   lazy = false,
   opts = {
-    
   PATH = "skip",
 
   ui = {
