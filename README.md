@@ -50,6 +50,13 @@ See the [CHANGELOG](CHANGELOG.md) file for details.
 
 You can customize the configuration to suit your needs by editing the relevant Lua files in the lua/ directory.
 
+## Credits
+
+- NvChad 
+- LazyVim
+- Shock9616/nvim-config for lualine config
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
