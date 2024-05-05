@@ -5,7 +5,7 @@ local capabilities = require("configs.lspconfig").capabilities
 local schemastore = require "schemastore"
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "tsserver", "jsonls", "yamlls", "solargraph"}
+local servers = { "html", "cssls", "tsserver", "jsonls", "yamlls", "solargraph", "taplo"}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
